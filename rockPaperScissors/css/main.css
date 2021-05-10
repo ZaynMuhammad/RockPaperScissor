@@ -1,0 +1,315 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font: 300 16px/22px "Nato Sans JP", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/*
+  ==================================
+    Typography
+  ==================================
+*/
+
+h1 {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    font-size: 34px;
+    line-height: 44px;
+    color: black;
+    padding-bottom: 40px;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 44px;
+    color: black;
+}
+
+.score {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 450px;
+}
+
+
+/*
+  ==================================
+    Button Styling
+  ==================================
+*/
+
+.btns {
+    display: flex;
+    min-height: 30vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    border: .4rem solid black;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    width: 10rem;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.1);
+    text-shadow: 0 0 .5rem black;
+}
+
+.btn-hovering:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+.icons {
+    display: inline-block;
+    height: 2em;
+}
+
+
+/*
+  ==================================
+    Icon Styling
+  ==================================
+*/
+
+.human-robot-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 75px;
+}
+
+.player-image {
+    align-self: flex-start;
+    height: 3em;
+    width: 3em;
+    margin-top: 28px;
+}
+
+.computer-image {
+    height: 3.5em;
+    width: 3.5em;
+    margin-left: auto;
+}
+
+.icon-border {
+    border: .2rem solid black;
+    border-radius: .5rem;
+    padding: 2rem 2.3rem 3rem 2rem;
+    text-align: top;
+    color: white;
+    margin: 50px 420px 40px 420px;
+}
+
+
+/*
+    Note: In javascript I will have to remove the top and bottom padding
+    and set it to zero, and set a font-size property of 1.5 rem in order
+    to keep the display boxes the same size and prevent expanding of the
+    box.
+*/
+
+.display-player,
+.display-computer {
+    border: .2rem solid black;
+    border-radius: .5rem;
+    margin: 1rem 4.4rem;
+    padding: 1.9rem 1rem;
+    width: 3rem;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.1);
+    text-shadow: 0 0 .5rem black;
+}
+
+.score-tracker-player {
+    display: flex;
+    padding-left: 485px;
+}
+
+.score-tracker-computer {
+    display: flex;
+    justify-content: end;
+    padding-right: 485px;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    /* background: rgba(255, 255, 255, 0);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 255, 182, 0.5), 0px 0px 10px 2px rgba(0, 255, 135, 1); */
+    background-color: #bbb;
+    border-radius: 50%;
+    margin-top: auto;
+}
+
+#dot-1,
+#dot-2,
+#dot-4,
+#dot-5 {
+    margin-right: 10px;
+}
+
+#dot-3 {
+    margin-right: 355px;
+}
+
+#dot-6 {
+    margin-right: 20px;
+}
+
+.win {
+    background: rgba(255, 255, 255, 0);
+    box-shadow: inset 0px 0px 10px 2px rgba(0, 255, 182, 0.5), 0px 0px 10px 2px rgba(0, 255, 135, 1);
+}
+
+@media only screen and (max-width: 600px) {
+    .icon-border {
+        margin: 50px 10rem 30px 10rem;
+    }
+}

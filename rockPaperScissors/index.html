@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <meta charset="UTF-8"/>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="css/main.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap" rel="stylesheet"></link>
+  </head>
+
+  <body>
+
+    <h1>Human Vs. Machine</h1>
+
+    <div class="score">
+      <h2 class="player-score">Player Score</h2>
+      <h2 class="computer-score">Computer Score</h2>
+    </div>
+
+    <div class="score-tracker-player score-tracker-computer">
+      <span ID="dot-1" class="dot"></span>
+      <span ID="dot-2" class="dot"></span>
+      <span ID="dot-3" class="dot"></span>
+      <span ID="dot-4" class="dot"></span>
+      <span ID="dot-5" class="dot"></span>
+      <span ID="dot-6" class="dot"></span>
+    </div>
+
+
+  
+    <div class="human-robot-display icon-border">
+      <img ID="player" class="player-image" src="images/user_2.png"></img>
+      <div class="display-player"></div>
+      <h1 class="inner-vs">Vs.</h1>
+      <div ID="computer" class="display-computer"></div>
+      <img class="computer-image" src="images/robot.png"></img>
+    </div>
+
+    <div class="btns">
+      <div id="rock" class="btn-hovering btn">
+        <img id="rock" class="icons" src="images/rock.png"></img>
+      </div>
+      <div id="paper" class="btn-hovering btn">
+        <img class="icons" src="images/paper.png"></img>
+      </div>
+      <div id="scissor" class="btn-hovering btn">
+        <img class="icons" src="images/scissor.png"></img>
+      </div>
+    </div>
+
+    <script src="rockPaperScissor.js">
+    </script>
+  </body>
+</html>
